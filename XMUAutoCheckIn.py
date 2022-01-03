@@ -36,7 +36,7 @@ mail_server_url = 'http://120.77.39.85:8080/mail/daily_report'
 
 
 def random_second() -> int:
-    return random.randrange(start=0, stop=3600, step=1)
+    return random.randrange(start=0, stop=600, step=1)
 
 
 def unix_timestamp() -> int:
