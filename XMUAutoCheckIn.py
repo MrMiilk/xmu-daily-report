@@ -225,7 +225,7 @@ def main():
                     config["password_vpn"],
                     config['email'], False
                 )
-                return
+                break
             except RuntimeError:
                 logger.info("直连打卡失败，尝试VPN")
                 try:
@@ -235,7 +235,7 @@ def main():
                         config["password_vpn"],
                         config['email'], True
                     )
-                    return
+                    break
                 except Exception as e:
                     fail("尝试失败", "打卡失败", "", e, shutdown=False)
         fail(f"账号【{config['username']}】重试10次后依然打卡失败，请排查日志",
