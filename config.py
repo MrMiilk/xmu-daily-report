@@ -10,11 +10,6 @@ class Config:
         self.password = ''
         self.password_vpn = ''
         self.email = ''
-        self.district = ''
-        self.inschool = ''
-        self.campus = ''
-        self.building = ''
-        self.room = ''
 
 
 def make_configs(json_str: str) -> List[Config]:
